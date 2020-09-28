@@ -26,7 +26,7 @@ def load_config(config_path=None):
 
 def _get_py_files(location):
     """Scan the location directory and return a list of .py filenames.
-    scandir is reccomended for speed and handling of overlength Windows paths.
+    scandir is recommended for speed and handling of overlength Windows paths.
 
     :param location: <str> location to scan in.
     """
