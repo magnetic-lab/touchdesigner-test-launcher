@@ -16,7 +16,7 @@ class TestMain(unittest.TestCase):
         self.assertIsInstance(td.op("/").create(td.containerCOMP), td.containerCOMP)
         # single character name
         self.assertTrue(self._assertWasCreated(self._id_generator(1, 1), td.containerCOMP))
-        # # rediculously large name (using Windows path length limit)
+        # # ridiculously large name (using Windows path length limit)
         self.assertTrue(self._assertWasCreated(self._id_generator(1000, 1000), td.containerCOMP))
         # uncomment below to trigger a failed test result.
         # Don't forget to uncomment the 'print(test_results.failures)' line in unit_test_launcher.py
